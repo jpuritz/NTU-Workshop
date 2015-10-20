@@ -624,19 +624,21 @@ The output on the screen should look like:
      ------------------------------------------------------------
 
 
-	step 6: clustering across 40 samples at '.88' similarity 
+        step 6: clustering across 40 samples at '.88' similarity
 
-	vsearch v1.1.0_linux_x86_64, 883.4GB RAM, 160 cores
-	https://github.com/torognes/vsearch
+vsearch v1.8.0_linux_x86_64, 15.6GB RAM, 6 cores
+https://github.com/torognes/vsearch
 
-	Reading file /gdc_home4/jpuritz/DATA/test2/pyrad/clust.88/cat.firsts_ 100%  
-	3258238 nt in 35004 seqs, min 91, max 100, avg 93
-	Indexing sequences 100%  
-	Counting unique k-mers 100%  
-	Clustering 100%  
-	Writing clusters 100%  
-	Clusters: 1049 Size min 1, max 47, avg 33.4
-	Singletons: 22, 0.1% of seqs, 2.1% of clusters
+Reading file /home/biolab/INSTRUCTOR/jpuritz/pyrad/clust.88/cat.firsts_ 100%
+3115443 nt in 33487 seqs, min 91, max 99, avg 93
+Counting unique k-mers 100%
+Clustering 100%
+Sorting clusters 100%
+Writing clusters 100%
+Clusters: 1053 Size min 1, max 40, avg 31.8
+Singletons: 22, 0.1% of seqs, 2.1% of clusters
+
+        finished clustering
 ```
 We can see that pyRAD (via the program vsearch) found 1049 different shared reference sequences
 
