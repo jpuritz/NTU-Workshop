@@ -567,7 +567,7 @@ AATTTGTGGGTTTCTCCT--AAAGATTACCAAATTCTAGTATCAATCATCCTCCTCCCAATGCATGGAGA-TGGCCACAC
 ```
 This cluster has 5 different unique sequences in it.  Three of them are only one copy (shown by the size=1 flag in the header).
 
-The first two sequences are the only one with any high numbers.  With the current settings, pyRAD is treating this as a paralog because the PE reads have 7 gaps in the alignment.  The default setting is to only allow 3 indels.  To improve this assembly, we will likely need to increase the setting.  Let's change it to 10.
+The first two sequences are the only ones with any high numbers.  With the current settings, pyRAD is treating this as a paralog because the PE reads have 7 gaps in the alignment.  The default setting is to only allow 3 indels.  To improve this assembly, we will likely need to increase the setting.  Let's change it to 10.
 
 ```bash 
 sed -i '/## 27./c\10,99               ## 27. maxIndels: within-clust,across-clust (def. 3,99) ' ./params.txt
