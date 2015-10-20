@@ -667,15 +667,16 @@ Let's take a look at the stats.
 head ./stats/c88d6m4p3.stats 
 ```
 ```
-1009        ## loci with > minsp containing data
-77          ## loci with > minsp containing data & paralogs removed
-77          ## loci with > minsp containing data & paralogs removed & final filtering
-	## number of loci recovered in final data set for each taxon.
-		taxon	nloci
-		PopA_01	56
-		PopA_02	56
+1018        ## loci with > minsp containing data
+106         ## loci with > minsp containing data & paralogs removed
+106         ## loci with > minsp containing data & paralogs removed & final filtering
+
+## number of loci recovered in final data set for each taxon.
+taxon   nloci
+PopA_01 69
+PopA_02 66
 ```
-What the heck happened to all our data?  We went from 1009 RAD fragments to 77???????
+What the heck happened to all our data?  We went from 1018 RAD fragments to 106???????
 It looks like pyRAD is inferring that almost all of the loci are paralogs.
 Remember, pyRAD is designed to generate phylogenetic data sets and is not default configured to deal with highly polymorphic populations.
 Setting number 13 sets the maximum number of individuals with a shared heterozygous site.  The default configuration is only 3.  
