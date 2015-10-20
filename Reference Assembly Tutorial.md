@@ -434,7 +434,7 @@ X	Contig number
 ```
 You can see that the most common number of contigs across all iteration is 1000, but also that the top three occuring and the average are all within 1% of the true value
 Again, this is simulated data and with real data, the number of exact reference contigs is unknown and you will ultimately have to make a judgement call.
-Congrats!  You've finished the reference assembly tutorial.
+Congrats!  You've finished the reference assembly tutorial for dDocent. Let's try pyRAD!
 
 #pyRAD assembly tutorial
 
@@ -534,7 +534,7 @@ The output should look like:
 This will continue through all 40 samples
 When the clustering step completes we can examine the results by looking at the file s3.clusters.txt in the /stats directory
 ```bash 
-head -5 ./stats/s3.clusters.txt
+head -6 ./stats/s3.clusters.txt
 ```
 ```
 taxa	total	dpt.me	dpt.sd	d>5.tot	d>5.me	d>5.sd	badpairs
@@ -580,7 +580,7 @@ pyrad -p params.txt -s 3
 ```
 Let's check the results
 ```bash 
-head -50 ./stats/s3.clusters.txt
+head -6 ./stats/s3.clusters.txt
 ```
 ```
 taxa	total	dpt.me	dpt.sd	d>5.tot	d>5.me	d>5.sd	badpairs
