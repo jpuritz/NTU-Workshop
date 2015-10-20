@@ -603,15 +603,15 @@ pyrad -p params.txt -s 45
 ```
 The output should be like this:
 ```
- ------------------------------------------------------------
-   pyRAD : RADseq for phylogenetics & introgression analyses
- ------------------------------------------------------------
+     ------------------------------------------------------------
+      pyRAD : RADseq for phylogenetics & introgression analyses
+     ------------------------------------------------------------
 
 
-	step 4: estimating error rate and heterozygosity
-	........................................
-	step 5: created consensus seqs for 40 samples, using H=0.00662 E=0.00099
-	........................................
+        step 4: estimating error rate and heterozygosity
+        ........................................
+        step 5: created consensus seqs for 40 samples, using H=0.00732 E=0.00100
+        ........................................
 ```
 The next step is to cluster between samples
 ```bash 
