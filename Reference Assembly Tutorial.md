@@ -688,11 +688,18 @@ rm ./outfiles/* && pyrad -p params.txt -s 7
 Let's see if that helped.
 ```bash
 head ./stats/c88d6m4p3.stats
-1009        ## loci with > minsp containing data
-956         ## loci with > minsp containing data & paralogs removed
-956         ## loci with > minsp containing data & paralogs removed & final filtering
+```
+```
+1018        ## loci with > minsp containing data
+970         ## loci with > minsp containing data & paralogs removed
+970         ## loci with > minsp containing data & paralogs removed & final filtering
+
+## number of loci recovered in final data set for each taxon.
+taxon   nloci
+PopA_01 808
+PopA_02 803
 ```	
-That looks much better! 956 is very close to the actual value!
+That looks much better! 970 is very close to the actual value!
 Now that you know how to manipulate the different parameters in pyRAD, experiment on your own to see if you can find the right settings to get to the correct number of loci!
 
 ##Bonus
