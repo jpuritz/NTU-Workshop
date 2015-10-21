@@ -33,5 +33,6 @@ Answer:
 
 Question 6- Print the average MEAN_DEPTH 
 
+
 Answer:	
 `awk '{sum=sum+$3} END {print sum/NR}' ~/COURSE_DATA/out.idepth`
