@@ -11,13 +11,13 @@ Answer:
 The contents were:
 `Game of Thrones`
 
-Question 2- Print the first 5 lines of the third column of out.idepth.
+Question 2- Print the first 5 lines of the third column of out.idepth
 
 Answer:	
 
 `cut -f3 ~/COURSE_DATA/out.idepth | head -5`
  
-Question 3- Print only the 19th line of the second column of out.idepth.
+Question 3- Print only the 19th line of the second column of out.idepth
 
 Answer:	
 `head -19 ~/COURSE_DATA/out.idepth | cut -f2 | tail -1`
