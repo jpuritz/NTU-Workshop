@@ -1,3 +1,3 @@
 # NTU-Workshop
 
-Here you find the exercises used for class
+Hi everyone, I've created this site to hold all the slides, exercises, tutorials, and other class information.
