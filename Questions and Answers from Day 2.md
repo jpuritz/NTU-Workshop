@@ -6,9 +6,7 @@ Question 1-  Put your answers in a text file with your Group’s name on it in t
 I have put a text file, named file, in the directory “sneaky” that’s within the directory “documents” that’s within the home directory.  Tell me what the contents of the file is.
 
 Answer:
-```bash
-cat ~/documents/sneaky/file
-```
+`cat ~/documents/sneaky/file`
 
 The contents were:
 `Game of Thrones`
