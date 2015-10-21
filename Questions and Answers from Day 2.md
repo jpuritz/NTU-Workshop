@@ -21,16 +21,20 @@ Answer:
  
 Question 3- Print only the 19th line of the second column of out.idepth.
 
+Answer:	
 `head -19 ~/COURSE_DATA/out.idepth | cut -f2 | tail -1`
 
 Question 4- Print how many individuals have a MEAN_DEPTH greater than 20.1
 
+Answer:	
 `awk '$3 > 20.1' ~/COURSE_DATA/out.idepth | awk '!/MEAN/' | wc -l`
 
 Question 5- Print how many individuals have a MEAN_DEPTH greater than 20.1 but less than 20.4
 
+Answer:	
 `awk '$3 > 20.1' ~/COURSE_DATA/out.idepth | awk '$3 < 20.4' | awk '!/MEAN/' | wc -l`
 
 Question 6- Print the average MEAN_DEPTH 
 
+Answer:	
 `awk '{sum=sum+$3} END {print sum/NR}' ~/COURSE_DATA/out.idepth`
