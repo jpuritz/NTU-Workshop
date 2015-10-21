@@ -19,7 +19,7 @@ curl -L -o data.zip https://www.dropbox.com/sh/nh2km7n2k8egmge/AABWKxCXww4BKMZIc
 Let's check that everything went well.
 ```bash
 unzip data.zip
-ll
+ls -l
 ```
 You should see something like this:
 ```
