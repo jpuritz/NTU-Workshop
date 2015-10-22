@@ -887,7 +887,7 @@ This produces a FINAL FINAL FINAL filtered VCF file	SNP.DP3g95p5maf05.HWE.filter
 ```bash
 mawk '!/#/' SNP.DP3g95p5maf05.HWE.filtered.vcf | wc -l
 ```
-We're left with 7,765 SNPs!
+We're left with 7,665 SNPs!
 How man possible errors?
 ```bash
 ./ErrorCount.sh SNP.DP3g95p5maf05.HWE.filtered.vcf
