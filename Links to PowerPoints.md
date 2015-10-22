@@ -6,4 +6,6 @@
 
 [NGS Output Files Lecture](http://figshare.com/s/e1922a3c77d011e589f006ec4bbcf141)
 
+[Day Four Slides](http://figshare.com/s/ddbea24e789011e59ea906ec4bbcf141)
+
 
