@@ -305,7 +305,7 @@ E1_L101 15      34      0                       0       0
 I added extra tabs to make this easier to read, but what we are interested in is that last column with is the percentage of missing data for that locus.
 We can combine the two files and make a list of loci about the threshold of 10% missing data to remove.  Note this is double the overall rate of missing data.
 ```bash
-cat 1.lmiss 2.lmiss | mawk '!/CHROM/' | mawk '$6 > 0.1' | cut -f1,2 >> badloci
+cat 1.lmiss 2.lmiss | mawk '!/CHR/' | mawk '$6 > 0.1' | cut -f1,2 >> badloci
 ```
 Who can walk us through that line of code?
 
