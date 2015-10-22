@@ -685,7 +685,7 @@ That's a lot of filtering, and we should have confidence in these SNP calls.
 However, our lab is currently developing one more script, called rad_haplotyper.  
 This tool takes a VCF file of SNPs and will parse through BAM files looking to link SNPs into haplotypes along paired reads.
 ```bash
-curl -L -O https://github.com/chollenbeck/rad_haplotyper/raw/master/rad_haplotyper.pl
+curl -L -O https://raw.githubusercontent.com/jpuritz/NTU-Workshop/master/scripts/rad_haplotyper.pl
 chmod +x rad_haplotyper.pl
 ```
 Note, this script requires several Perl libraries.  See the README at https://github.com/chollenbeck/rad_haplotyper
@@ -911,3 +911,5 @@ The total SCORCHED EARTH error rate is 0.0330310061169.
 **Congrats!  You've finished the Filtering Tutorial**
 
 #Even bigger Congrats!  You've finished all the tutorials in the Workshop!
+
+###One extra note: My lab is currently writing up a manuscript on the rad_haplotyper script, so please contact me before sharing it with anyone.  Thanks!
