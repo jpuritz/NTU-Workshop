@@ -688,7 +688,7 @@ This tool takes a VCF file of SNPs and will parse through BAM files looking to l
 curl -L -O https://raw.githubusercontent.com/jpuritz/NTU-Workshop/master/scripts/rad_haplotyper.pl
 chmod +x rad_haplotyper.pl
 ```
-Note, this script requires several Perl libraries.  See the README at https://github.com/chollenbeck/rad_haplotyper
+Note, this script requires several Perl libraries.  See the README [here](https://github.com/jpuritz/NTU-Workshop/blob/master/scripts/README.md)
 It has a lot of options, let's take a look
 ```bash
 perl rad_haplotyper.pl
