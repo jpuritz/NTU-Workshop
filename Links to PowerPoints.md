@@ -8,4 +8,6 @@
 
 [Day Four Slides](http://figshare.com/s/ddbea24e789011e59ea906ec4bbcf141)
 
+[Day Five Slides](http://figshare.com/s/d78d92f27d8d11e5addc06ec4bbcf141)
+
 
