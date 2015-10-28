@@ -1,0 +1,38 @@
+library(adegenet)
+library(plyr)
+
+data.loci=read.genepop("Shark_Outlier.gen") #Import Data
+levels(data.loci@pop) <-c("AK","LK","NC","PC") #Set Population Names
+data.loci.mean <- tab(data.loci, NA.method="mean") #Replace Zeros with mean
+test<-levels(data.loci@pop) #Create Vector of Pop Names
+test1<-revalue(test, c("NC"="Dark Blue","PC"="Green", "LK"="Dark Red", "AK"="Orange")) #Code colors for populations
+
+pca.loci.mean <- dudi.pca(data.loci.mean); #Create PCA
+s.class(pca.loci.mean$li, pop(data.loci), xax=1,yax=2, col=test1); #Plot PCA
+title("Centered PCA of Loci Dataset"); #Title Graph
+
+grp <- find.clusters(data.loci.mean, max.n.clust=10); #Use K-means clustering to infer groups
+table.value(table(pop(data.loci), grp$grp), col.lab=paste("Inferred", 1:10), row.lab=paste(levels(data.loci@pop))) #print frequency table
+table(pop(data.loci), grp$grp) #print numbered table
+dapc1 <- dapc(data.loci.mean, grp$grp) #create DAPC
+scatter(dapc1, posi.da="bottomright",  bg="white", pch=17:22, cstar=0, col=test1, scree.pca=FALSE, posi.pca="NULL") #Plot DAPC
+title("DAPC with Inferred Groups") #Title Graph
+
+dapc2<- dapc(data.loci.mean, pop(data.loci)) #Create DAPC with location as a group
+
+scatter(dapc2, posi.da="bottomright",  bg="white", pch=17:22, cstar=0, col=test1, scree.pca=TRUE, posi.pca="bottomleft"); #Plot DAPC
+title("DAPC with Localities as Groups") #Set Title
+
+
+
+#DiveRsity
+
+library(diveRsity)
+data <- readGenepop(infile="Shark_Outlier.gen") #Convert Genepop file to DiveRsity file
+results <- diffCalc(infile="Shark_Outlier.gen", outfile="text", fst = TRUE, pairwise = T, para = T, bs_pairwise = T,boots = 1000) #calculate divergence statistcs with 1000 bootstraps
+
+
+
+
+
+
